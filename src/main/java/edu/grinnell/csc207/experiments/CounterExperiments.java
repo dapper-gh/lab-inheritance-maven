@@ -9,6 +9,7 @@ import edu.grinnell.csc207.util.BasicCounter;
 import edu.grinnell.csc207.util.Counter;
 import edu.grinnell.csc207.util.Tally;
 import edu.grinnell.csc207.util.DecrementableCounter;
+import edu.grinnell.csc207.util.NamedCounter;
 
 /**
  * Some experiments as we explore our various Counter classes.
@@ -25,7 +26,7 @@ public class CounterExperiments {
     PrintWriter pen = new PrintWriter(System.out, true);
 
     // Set up some counters
-    Counter alpha = new Tally();
+        Counter alpha = new NamedCounter("alfa", 0);
     Counter beta = new BasicCounter(123);
     Counter gamma = new DecrementableCounter(-5);
 
