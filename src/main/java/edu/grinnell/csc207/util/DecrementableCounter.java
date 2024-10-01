@@ -1,0 +1,23 @@
+package edu.grinnell.csc207.util;
+
+/**
+ * Counters that you can decrement.
+ */
+public class DecrementableCounter extends BasicCounter {
+    /**
+     * Create a new decrementable counter.
+     *
+     * @param start
+     *   The initial value of the counter.
+     */
+    public DecrementableCounter(int start) {
+      super(start);
+    } // DecrementableCounter(int)
+
+    public void decrement() throws Exception {
+        if (this.count == Integer.MIN_VALUE) {
+            throw new Exception("Cannot decrement Counter without underflow");
+        } // if
+        this.count--;
+    } // decrement()
+  } // class DecrementableCounter

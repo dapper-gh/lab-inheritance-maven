@@ -20,7 +20,7 @@ public class BasicCounter implements Counter {
     public void increment() throws Exception {
         if (this.count == Integer.MAX_VALUE) {
             throw new Exception("Counter too large");
-        }
+        } // if
         this.count++;
     } // increment()
 
